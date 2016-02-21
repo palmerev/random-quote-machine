@@ -2,10 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
         <title>Evan's Random Quote Machine</title>
+        <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
     </head>
     <body>
-
+        <h1>Random Quote Machine</h1>
+        <p>Get a free quote today!</p>
+        <main>
+            <blockquote class="quote">
+                <span id="quote-body" class="quote-body">This is the greatest quote generator of all time!</span><br />
+                <span id="quote-author" class="quote-author">- Evan Palmer</span>
+            </blockquote>
+            <div class="btn-wrapper">
+                <button id="get-quote-btn" type="button" name="button">Get Quote</button>
+            </div>
+        </main>
+        <footer>
+            Quotes provided by the <a href="#">Forismatic API</a>.
+        </footer>
+        <script src="main.js" charset="utf-8"></script>
     </body>
 </html>

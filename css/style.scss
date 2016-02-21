@@ -3,3 +3,62 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    height: 100%
+}
+body {
+    position: relative;
+    padding: 1em;
+    font-family: monospace;
+    background-color: lighten(rebeccapurple, 30%);
+    min-height: 100%;
+}
+
+h1, p, main, footer {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main {
+    margin-top: 1em;
+    padding: 1em;
+    border: 3px solid white;
+    border-radius: 0.5em;
+    min-height: 50vh;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+blockquote {
+    font-size: 1.75em;
+    font-family: cursive;
+    padding: 3em;
+    border: 3px solid lighten(orange, 15%);
+    border-radius: 3em;
+    min-height: 10em;
+}
+
+footer {
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+button {
+    margin-top: 1em;
+    padding: 1em;
+    font-family: inherit;
+}
+
+.quote-body {
+
+}
