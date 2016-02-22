@@ -32,4 +32,6 @@ $(document).ready(function () {
 
   var $getQuoteBtn = $("#get-quote-btn");
   $getQuoteBtn.on("click", getQuote);
+
+  getQuote();
 });
