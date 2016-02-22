@@ -7,10 +7,12 @@ body {
 main {
   max-width: 90vw;
   margin: 0 auto;
+  padding-top: 1em;
 }
 h1 {
   color: #CCC;
   font-weight: normal;
+  font-size: 1.5em;
   background: darken(rebeccapurple, 10%);
   box-shadow: 0 0 10px 10px darken(rebeccapurple, 10%);
   padding: 0;
@@ -19,6 +21,7 @@ h1 {
 .quote {
   color: white;
   padding: 0.5em;
+  padding-top: 1em;
   min-height: 30vh;
   max-width: 90vw;
   margin: 1em auto;
@@ -27,18 +30,7 @@ h1 {
 }
 
 blockquote {
-  &::before {
-    content: "“";
-    font-size: 5em;
-    color: orange;
-    margin-right: 1rem;
-  }
-  &::after {
-    content: "„";
-    font-size: 5em;
-    color: orange;
-    margin-left: 1rem;
-  }
+    font-size: 1.5em;
 }
 button {
   background: #FFF;
