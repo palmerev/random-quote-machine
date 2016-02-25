@@ -1,3 +1,5 @@
+$maxWidth: 90vw;
+
 body {
   background-color: darken(rebeccapurple, 30%);
   font-family: sans-serif;
@@ -5,17 +7,19 @@ body {
 }
 
 main {
-  max-width: 90vw;
+  max-width: $maxWidth;
   margin: 0 auto;
   padding-top: 1em;
 }
 h1 {
+  width: $maxWidth - 1vw;
   color: #CCC;
   font-weight: normal;
   font-size: 1.5em;
-  background: darken(rebeccapurple, 10%);
-  box-shadow: 0 0 10px 10px darken(rebeccapurple, 10%);
+  background: darken(rebeccapurple, 20%);
+  box-shadow: 0 0 10px 10px darken(rebeccapurple, 20%);
   padding: 0;
+  margin: 0 auto;
 }
 
 .quote {
@@ -33,13 +37,18 @@ blockquote {
     font-size: 1.5em;
 }
 button {
+  $xMargin: 2em;
   background: #FFF;
   font-size: inherit;
-  padding: 0.75em;
+  padding: 0.5em;
+  margin-left: $xMargin;
+  margin-right: $xMargin;
+  margin-bottom: 0.5em;
   border: none;
   border-radius: 5px;
 }
 
 p#author::before {
-  content: "- ";
+  content: "---------";
+  display: block;
 }
