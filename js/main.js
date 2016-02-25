@@ -18,7 +18,6 @@ $(document).ready(function () {
     }
 
   function displayQuote(quote) {
-    console.log("display quote running");
     var $qBody = $("#body"),
         $qAuthor = $("#author");
     $qBody.text(quote.quoteText);
