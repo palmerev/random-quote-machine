@@ -4,6 +4,7 @@ body {
   background-color: darken(rebeccapurple, 30%);
   font-family: sans-serif;
   text-align: center;
+  margin-top: 4em;
 }
 
 main {
@@ -11,6 +12,7 @@ main {
   margin: 0 auto;
   padding-top: 1em;
 }
+
 h1 {
   width: $maxWidth - 1vw;
   color: #CCC;
@@ -36,16 +38,42 @@ h1 {
 blockquote {
     font-size: 1.5em;
 }
+
 button {
   $xMargin: 2em;
-  background: #FFF;
-  font-size: inherit;
+  background: white;
+  font-size: 1.2em;
   padding: 0.5em;
   margin-left: $xMargin;
   margin-right: $xMargin;
   margin-bottom: 0.5em;
   border: none;
   border-radius: 5px;
+  &:active {
+    background: white;
+    color: orange;
+  }
+}
+
+.tweet-btn {
+    color: white;
+    background: rgb(85, 172, 238);
+}
+
+.change-quote-btn {
+    color: white;
+    background: orange;
+}
+
+#get-quote-btn,
+.tweet-btn {
+    i {
+        margin-left: 0.5em;
+    }
+}
+
+#previous-quote-btn i {
+    margin-right: 0.5em;
 }
 
 p#author::before {
